@@ -13,19 +13,15 @@ def test():
     result_lists = []
     test_case1 = linear_search(2, [2, 3, 5, 7, 11])
     test_case2 = linear_search(0, [2, 3, 5, 7, 11])
-    test_case3 = linear_search(0, [2, 3, 5, 7, 11])
-    test_case4 = linear_search(5, [2, 3, 5, 7, 11])
-    test_case5 = linear_search(5, [2, 3, 5, 7, 11])
-    test_case6 = linear_search(3, [2, 3, 5, 7, 11])
-    test_case7 = linear_search(11, [2, 3, 5, 7, 11])
+    test_case3 = linear_search(5, [2, 3, 5, 7, 11])
+    test_case4 = linear_search(3, [2, 3, 5, 7, 11])
+    test_case5 = linear_search(11, [2, 3, 5, 7, 11])
 
     result_lists += [test_case1,
                      test_case2,
                      test_case3,
                      test_case4,
-                     test_case5,
-                     test_case6,
-                     test_case7]
+                     test_case5]
 
     if answer_lists == result_lists:
         return "SUCCESS"
