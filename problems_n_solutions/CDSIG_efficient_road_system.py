@@ -2,7 +2,8 @@ from itertools import combinations
 
 INF = int(1e9)
 
-
+# CDSIG efficient road algorithms
+# TODO better data structure usage
 def solution(n, roads):
     if n <= 1:
         return True
