@@ -31,3 +31,17 @@ def solution(roadRegister):
 
         new_roadRegister.append(num_road)
     return new_roadRegister
+
+def solution2(roadRegister):
+    swap = lambda x: [x[-1]] + x[:-1]
+    return swap([swap(road) for road in roadRegister])
+
+if __name__ == "__main__":
+    sample = [[False,True,True,False],
+             [True,False,True,False],
+             [True,True,False,True],
+             [False,False,True,False]]
+    res = solution(sample)
+    res2 = solution2(sample)
+    print(res)
+    print(res2)
